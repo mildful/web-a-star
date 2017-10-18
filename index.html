@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>A*</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="scripts/utils.js"></script>
+    <script type="text/javascript" src="scripts/node.js"></script>
+    <script type="text/javascript" src="scripts/route-node.js"></script>
+    <script type="text/javascript" src="scripts/map.js"></script>
+    <script type="text/javascript" src="scripts/renderer.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="pane">
+      <div class="controls">
+        <button type="button" name="generate" class="generate-btn">generate</button>
+        <button type="button" name="settings" class="settings-btn">settings</button>
+      </div>
+      <div class="settings">
+        <div class="performances">
+          <h2 class="settings-title">Performances</h2>
+        </div>
+        <div class="generation">
+          <h2 class="settings-title">Generation</h2>
+          <span>width:</span>
+          <input type="number" name="width" min="1" value="30">
+          <span>height:</span>
+          <input type="number" name="height" min="1" value="30">
+          <span>wall frequency:</span>
+          <input type="number" name="wall-frequency" min="0" max="1" value="0.25" step="0.05">
+        </div>
+        <div class="render">
+            <h2 class="settings-title">Render</h2>
+            <span>tile size:</span>
+            <input type="number" name="tile-size" min="2" value="20">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
